@@ -4,7 +4,8 @@ import java.util.*
 
 class TicketKt (val numberTicket: Int, val numberRoundTrip: Int){
     fun compute(){
-        print(((numberTicket-numberRoundTrip) *1000+numberRoundTrip*2000*0.9).toInt())
+        var total = ((numberTicket-numberRoundTrip) *1000+numberRoundTrip*2000*0.9).toInt()
+        print("Total tickets: $numberTicket \nRound-trip: $numberRoundTrip \nTotal: $total")
     }
 }
 
